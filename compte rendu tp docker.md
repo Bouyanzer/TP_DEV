@@ -1,4 +1,4 @@
-# 📘 Introduction complète à Docker – Images, Containers, Commandes, Réseaux et Bonnes Pratiques
+#  Introduction complète à Docker – Images, Containers, Commandes, Réseaux et Bonnes Pratiques
 
 Ce document présente une vue d’ensemble complète de Docker : ses concepts, ses commandes, l’isolation, la création d’images, le partage, la sécurité ainsi que les bonnes pratiques professionnelles.
 
