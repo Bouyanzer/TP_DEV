@@ -1,6 +1,5 @@
 #  Introduction complète à Docker – Images, Containers, Commandes, Réseaux et Bonnes Pratiques
 
-Ce document présente une vue d’ensemble complète de Docker : ses concepts, ses commandes, l’isolation, la création d’images, le partage, la sécurité ainsi que les bonnes pratiques professionnelles.
 
 ---
 
@@ -251,13 +250,3 @@ Sans volume → données perdues si container supprimé.
 
 ---
 
-# 🎯 Conclusion
-
-Ce guide couvre :
-- les concepts fondamentaux (images, containers, isolation),
-- les commandes essentielles,
-- la gestion des données et réseaux,
-- la création et le partage d’images,
-- la sécurité et les bonnes pratiques.
-
-Il constitue une base solide pour comprendre et utiliser Docker efficacement, en développement comme en production.
