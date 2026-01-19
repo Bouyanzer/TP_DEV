@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  # Service API Flask qui renvoie la liste des produits
+  product-service:
+    build: ./product              # construit l'image depuis DockerCompose/product
+    volumes:
+      - ./product:/app           # monte le code local dans /app (même chemin que WORKDIR)
+    ports:
+      - "5001:80"                # port 5001 sur ta machine -> port 80 dans le conteneur
+
+  # Service site web PHP/Apache
+  website:
+    image: php:apache             # image officielle PHP + Apache
+    volumes:
+      - ./website:/var/www/html   # on monte le site dans le dossier servi par Apache
+    ports:
+      - "5002:80"                 # port 5002 sur ta machine -> port 80 dans le conteneur
+    depends_on:
+      - product-service           # démarre après le service produit
